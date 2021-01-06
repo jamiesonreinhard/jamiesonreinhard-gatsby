@@ -1,0 +1,21 @@
+.btn-link {
+  padding: 10px 20px;
+  background-color: white;
+  width: 150px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 2px 20px #333;
+  cursor: pointer;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+  &:hover {
+
+  }
+}
+
+.btn-link a {
+  text-decoration: none;
+  color: black;
+}

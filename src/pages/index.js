@@ -7,9 +7,18 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+    <div className="header">
+      <div className="text-container">
+        <h2>I'm Jamieson Reinhard</h2>
+        <h1>A Full Stack Web Developer</h1>
+        <p>Building with Ruby on Rails, React, and more...</p>
+      </div>
+      <div className="btn-container">
+        <div className="btn-link"><Link to="/projects">Projects</Link></div>
+        <div className="btn-link"><Link to="/skills">Skills</Link></div>
+        <div className="btn-link"><Link to="/about">About</Link></div>
+      </div>
+    </div>
   </Layout>
 )
 

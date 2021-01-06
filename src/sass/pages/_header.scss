@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #ED535A;
+}
+
+.header h1 {
+  margin: 5px 0;
+  color: white;
+  font-size: 60px;
+}
+
+.header h2 {
+  margin: 5px 0;
+  font-size: 40px;
+}
+
+.header p {
+  margin: 5px 0;
+  font-size: 20px;
+}
+
+.text-container {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
