@@ -22,6 +22,14 @@ const Projects = () => {
     )
   })
 
+  const tagList = active.technologies.map(tag => {
+    return(
+      <div className="tag">
+        {tag}
+      </div>
+    )
+  });
+  
   return(
     <Layout>
     <SEO title="Page two" />
@@ -33,11 +41,18 @@ const Projects = () => {
         </div>
         <div className="projectCard" project={active}>
           <img src={active.img} className="projectImage"/>
-          <div className="projectDetails">
-            <h3>{active.name}</h3>
-            <small>{active.description}</small>
-            <Link to={active.url} className="projectLink"><small>Live Site >></small></Link>
-            <Link to={active.repo} className="projectLink"><small>Github >></small></Link>
+          <div className="projectInfo">
+            <div className="projectDetails">
+              <h3>{active.name}</h3>
+              <small>{active.description}</small>
+            </div>
+            <div className="tags">
+              {tagList}
+            </div>
+            <div className="projectLinks">
+              <Link to={active.url} className="projectLink"><small>Live Site >></small></Link>
+              <Link to={active.repo} className="projectLink"><small>Github >></small></Link>
+            </div>
           </div>
         </div>
       </div>

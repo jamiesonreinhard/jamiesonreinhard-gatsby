@@ -32,7 +32,8 @@ export const projects = [
     "repo": "https://github.com/jamiesonreinhard/tailored-food-front",
     "technologies": [
       "React.js",
-      "MapboxGl"
+      "MapboxGl",
+      "Netlify"
     ],
     "img": "/tailoredfood.png"
   },

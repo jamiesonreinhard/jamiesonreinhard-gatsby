@@ -1,0 +1,46 @@
+.skillDeck {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.skillCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  min-height: 250px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px #fff;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.skillCardIcon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.skillCard h3 {
+  margin: 0 0 10px 0;
+}
+
+.skillName {
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+
+.skillHr {
+  color: white;
+  width: 100%;
+  margin-bottom: 20px;
+}

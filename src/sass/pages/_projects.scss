@@ -7,13 +7,13 @@
 }
 
 .projectList {
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 .projectCard {
   display: flex;
   flex-direction: row;
-  max-width: 400px;
+  width: 600px;
   height: 250px;
   background-color: #333;
   border-radius: 10px;
@@ -22,21 +22,28 @@
 }
 
 .projectImage {
-  width: 60%;
+  width: 50%;
   height: 100%;
   object-fit: cover;
-  margin-right: 20px;
   border-radius: 10px;
+  margin-right: 20px;
   border: 1px solid white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.projectDetails {
+.projectInfo {
   display: flex;
   flex-direction: column;
   color: white;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.projectDetails {
+  margin-bottom: 10px;
+}
+
+.projectDetails h3 {
+  margin: 0 0 10px 0;
 }
 
 .projectName {
@@ -48,17 +55,40 @@
   }
 }
 
+.projectLinks {
+  display: flex;
+  flex-direction: column;
+}
+
 .projectLink {
   color: white;
   text-decoration: none;
-  margin-top: 10px;
   padding: 3px;
   background-color: #ed535a;
   text-align: center;
   border-radius: 10px;
+  width: 100%;
   transition: 0.2s;
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
   &:hover {
     background-color: #fff;
     color: #333;
+  }
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag {
+  padding: 1px 2px;
+  background-color: #fff;
+  color: #333;
+  margin-bottom: 5px;
+  &:not(:last-child) {
+    margin-right: 5px;
   }
 }
