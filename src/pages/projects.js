@@ -1,19 +1,53 @@
-import React from "react"
 import { Link } from "gatsby"
+import React, {useState} from 'react'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import {projects} from '../data/projects'
 
-const Projects = () => (
-  <Layout>
+const links = ['Home', 'Skills', 'About']
+
+
+const Projects = () => {
+  const linkList = links.map(link => {
+    return(
+      <Link to={`/${link.toLowerCase()}`} className="btn-link">{link}</Link>
+    )
+  })
+  const [active, setActive] = useState(projects[0]);
+  
+  const projectList = projects.map(project => {
+    return(
+      <h3 className={active === project ? "projectNameActive" : "projectName"} onClick={()=>setActive(project)} key={project.name} active={active === project}>{project.name} </h3>
+    )
+  })
+
+  return(
+    <Layout>
     <SEO title="Page two" />
-    <h1>Projects</h1>
-    <div className="btn-container">
-        <div className="btn-link"><Link to="/">Home</Link></div>
-        <div className="btn-link"><Link to="/skills">Skills</Link></div>
-        <div className="btn-link"><Link to="/about">About</Link></div>
+    <div className="header">
+      <h1>Projects</h1>
+      <div className="projectsContainer">
+        <div className="projectList">
+          {projectList}
+        </div>
+        <div className="projectCard" project={active}>
+          <img src={active.img} className="projectImage"/>
+          <div className="projectDetails">
+            <h3>{active.name}</h3>
+            <small>{active.description}</small>
+            <Link to={active.url} className="projectLink"><small>Live Site >></small></Link>
+            <Link to={active.repo} className="projectLink"><small>Github >></small></Link>
+          </div>
+        </div>
       </div>
+      <div className="btn-container">
+        {linkList}
+      </div>
+    </div>
+    
   </Layout>
-)
+  )
+}
 
 export default Projects

@@ -26,6 +26,7 @@ const Layout = ({ children }) => {
     <>
       <div>
         <main>{children}</main>
+        <small className="copyright">© Jamieson Reinhard 2021</small>
       </div>
     </>
   )

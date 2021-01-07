@@ -4,7 +4,16 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+const links = ['Projects', 'Skills', 'About']
+const linkList = links.map(link => {
+  return(
+    <Link to={`/${link.toLowerCase()}`} className="btn-link">{link}</Link>
+  )
+})
+
 const IndexPage = () => (
+
+  
   <Layout>
     <SEO title="Home" />
     <div className="header">
@@ -14,9 +23,7 @@ const IndexPage = () => (
         <p>Building with Ruby on Rails, React, and more...</p>
       </div>
       <div className="btn-container">
-        <div className="btn-link"><Link to="/projects">Projects</Link></div>
-        <div className="btn-link"><Link to="/skills">Skills</Link></div>
-        <div className="btn-link"><Link to="/about">About</Link></div>
+        {linkList}
       </div>
     </div>
   </Layout>
