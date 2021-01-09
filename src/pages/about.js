@@ -13,7 +13,7 @@ const linkList = links.map(link => {
 
 const About = () => (
   <Layout>
-    <SEO title="Page two" />
+    <SEO title="About" />
     <h1>About</h1>
     <div className="btn-container">
         {linkList}

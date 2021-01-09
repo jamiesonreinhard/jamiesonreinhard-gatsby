@@ -40,7 +40,7 @@ export const projects = [
   {
     "name": "LSAT Cracked",
     "description": "The best LSAT course money can buy.",
-    "url": "https://lsatcracked.com/",
+    "url": "https://www.lsatcracked.com/",
     "repo": "https://github.com/mwalsh2020/lsat-cracked",
     "technologies": [
       "Ruby on Rails",

@@ -32,7 +32,7 @@ const Projects = () => {
   
   return(
     <Layout>
-    <SEO title="Page two" />
+    <SEO title="Projects" />
     <div className="header">
       <h1>Projects</h1>
       <div className="projectsContainer">
