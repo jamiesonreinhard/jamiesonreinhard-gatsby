@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import {projects} from '../data/projects'
 
-const links = ['Home', 'Skills', 'About']
+const links = ['Home', 'About', 'Skills']
 
 
 const Projects = () => {

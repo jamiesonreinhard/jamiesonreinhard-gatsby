@@ -1,0 +1,1 @@
+export const hobbies = ["Skiing", "Snowboarding", "Golf", "Travel", "Music Production", "Video Editing", "Mountaineering", "Concerts", "Beer"]

@@ -1,0 +1,22 @@
+.cardIconContainer {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: #333;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.cardIcon {
+  z-index: 5;
+  color: #fff;
+  
+  width: 40px;
+  height: 40px;
+}

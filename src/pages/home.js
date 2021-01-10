@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const links = ['Projects', 'Skills', 'About']
+const links = ['About', 'Projects', 'Skills']
 const linkList = links.map(link => {
   return(
     <Link to={`/${link.toLowerCase()}`} className="btn-link">{link}</Link>

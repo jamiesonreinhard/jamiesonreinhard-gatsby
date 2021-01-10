@@ -12,7 +12,7 @@ const icons = [
   GiSkills
 ]
 
-const links = ['Home', 'Projects', 'About']
+const links = ['Home', 'About', 'Projects']
 const linkList = links.map(link => {
   return(
     <Link to={`/${link.toLowerCase()}`} className="btn-link">{link}</Link>
