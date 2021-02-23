@@ -22,7 +22,7 @@ const IndexPage = () => (
       </div>
       <div className="text-container">
         <h2>I'm Jamieson Reinhard</h2>
-        <h1>A Full Stack Web Developer</h1>
+        <h1 id="maintitle">A Full Stack Web Developer</h1>
         <p>Building with Ruby on Rails, React, and more...</p>
       </div>
     </div>

@@ -7,9 +7,13 @@
   width: 100%;
 }
 
+#maintitle {
+  color: white;
+}
+
 .header h1 {
   margin: 5px 0;
-  color: white;
+  color: black;
   font-size: 60px;
 }
 
@@ -26,12 +30,6 @@
 .text-container {
   margin-bottom: 30px;
   text-align: center;
-}
-
-.btn-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
 }
 
 @media (max-width: 400px) {
