@@ -7,7 +7,7 @@ export const skills = [
   {
     "title": "Frontend",
     "icon": "BiWindowAlt",
-    "skills": ["HTML5", "CSS3", "React.js", "Gatsby.js", "Middleman"]
+    "skills": ["HTML5", "CSS3", "React.js", "React Native", "Gatsby.js", "Middleman"]
   },
   {
     "title": "Other",

@@ -17,13 +17,13 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div className="header">
+      <div className="btn-container">
+        {linkList}
+      </div>
       <div className="text-container">
         <h2>I'm Jamieson Reinhard</h2>
         <h1>A Full Stack Web Developer</h1>
         <p>Building with Ruby on Rails, React, and more...</p>
-      </div>
-      <div className="btn-container">
-        {linkList}
       </div>
     </div>
   </Layout>

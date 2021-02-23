@@ -71,3 +71,33 @@
 
   }
 }
+
+@media (max-width: 400px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-card {
+    margin: 0 0 10px 0;
+    width: 325px;
+    padding: 20px 0;
+    text-align: center;
+    &:not(:last-child){
+      margin-right: 0;
+    }
+    &-profile {
+      justify-content: center;
+      margin: 0 0 10px 0;
+      width: 325px;
+    }
+  }
+  .about-card-profile h3 {
+    text-align: center;
+  }
+  .exp-item {
+    flex-direction: column;
+  }
+  .exp-item h4 {
+    margin-top: 10px;
+  }
+}

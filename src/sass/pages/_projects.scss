@@ -92,3 +92,39 @@
     margin-right: 5px;
   }
 }
+
+@media (max-width: 400px)  {
+  .projectsContainer {
+    flex-direction: column;
+    padding: 0;
+  }
+  .projectCard{
+    flex-direction: column;
+    width: 300px;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .projectList{
+    text-align: center;
+    margin: 10px 0;
+  }
+  .projectName{
+    margin: 10px 0;
+    &Active{
+      margin: 10px 0;
+    }
+  }
+  .projectImage {
+    width: 90%;
+    height: 150px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .projectLink {
+    &:not(:last-child){
+      margin: 10px 0;
+    }
+  }
+}

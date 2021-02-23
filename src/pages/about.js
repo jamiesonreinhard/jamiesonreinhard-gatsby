@@ -24,6 +24,9 @@ const About = () => (
   <Layout>
     <SEO title="About" />
     <div className="header">
+      <div className="btn-container">
+        {linkList}
+      </div>
       <h1>About</h1>
       <div className="about-container">
         <div className="about-card-profile">
@@ -78,9 +81,6 @@ const About = () => (
           <hr className="skillHr"/>
           { hobbyList }
         </div>
-      </div>
-      <div className="btn-container">
-        {linkList}
       </div>
     </div>
   </Layout>
