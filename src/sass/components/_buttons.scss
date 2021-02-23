@@ -22,3 +22,9 @@
 .btn-link a {
   
 }
+
+@media (max-width: 400px) {
+  .btn-link {
+    margin-bottom: 10px;
+  }
+}

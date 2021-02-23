@@ -34,6 +34,9 @@ const Projects = () => {
     <Layout>
     <SEO title="Projects" />
     <div className="header">
+      <div className="btn-container">
+        {linkList}
+      </div>
       <h1>Projects</h1>
       <div className="projectsContainer">
         <div className="projectList">
@@ -43,8 +46,8 @@ const Projects = () => {
           <img src={active.img} className="projectImage"/>
           <div className="projectInfo">
             <div className="projectDetails">
-              <h3>{active.name}</h3>
-              <small>{active.description}</small>
+              <h2 style={{color: '#ed535a'}}>{active.name}</h2>
+              <p>{active.description}</p>
             </div>
             <div className="tags">
               {tagList}
@@ -55,9 +58,6 @@ const Projects = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="btn-container">
-        {linkList}
       </div>
     </div>
     

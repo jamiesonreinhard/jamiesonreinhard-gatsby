@@ -43,12 +43,12 @@ const Skills = () => {
     <Layout>
     <SEO title="Skills" />
     <div className="header">
+      <div className="btn-container">
+        {linkList}
+      </div>
       <h1>Skills</h1>
       <div className="skillDeck">
         {skillDeck}
-      </div>
-      <div className="btn-container">
-        {linkList}
       </div>
     </div>
    

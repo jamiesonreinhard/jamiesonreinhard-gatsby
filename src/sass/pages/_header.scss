@@ -31,4 +31,24 @@
 .btn-container {
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 400px) {
+  .header {
+    margin: 0 auto;
+    height: auto;
+  }
+  .text-container {
+    width: 80%;
+  }
+  .header h1 {
+    font-size: 40px;
+  }
+  .header h3 {
+    font-size: 30px;
+  }
+  .btn-container {
+    flex-direction: column;
+  }
 }
